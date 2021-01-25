@@ -4,6 +4,7 @@ const webpack = require('webpack')
 module.exports = {
   outputDir: 'dist',
   assetsDir: 'static',
+  publicPath: '/three',
   lintOnSave: process.env.NODE_ENV === 'development',
   productionSourceMap: false,
   devServer: {

@@ -58,7 +58,7 @@ const routes = [
   }
 ]
 
-const router = new VueRouter({ routes })
+const router = new VueRouter({ routes, base: '/three/' })
 
 router.beforeEach((to, from, next) => {
   document.title = to.meta.title
