@@ -13,7 +13,7 @@ module.exports = {
 
   globals: { // 配置全局变量
     Vue: "readonly",
-    THREE: true
+    THREE: "readonly"
   },
 
   // add your custom rules here

@@ -9,6 +9,19 @@ import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.use(ElementUI)
 
+const funs = {
+  length: 0
+}
+
+Object.entries(THREE).forEach(([key, val]) => {
+  if (typeof val === 'function') {
+    funs.length++
+    funs[key] = val
+  }
+})
+
+console.log(funs)
+
 new Vue({
   router,
   store,
