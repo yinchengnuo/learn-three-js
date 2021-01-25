@@ -1,31 +1,37 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div class="app">
+    <el-row>
+      <el-col :span="4">
+        <el-menu router>
+          <menu-item v-for="route in $router.options.routes" :key="route.path" :route="route" />
+        </el-menu>
+      </el-col>
+      <el-col :span="20">
+        <router-view />
+      </el-col>
+    </el-row>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import MenuItem from '@/components/MenuItem'
+
+export default {
+  components: { MenuItem }
 }
+</script>
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+<style lang="scss" scoped>
+.app {
+  height: 100%;
+  .el-row {
+    width: 100%;
+    height: 100%;
+    .el-col {
+      height: 100%;
+      .el-menu {
+        height: 100%;
+      }
     }
   }
 }
