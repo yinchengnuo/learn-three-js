@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-    index
+    three.js 学习笔记
   </div>
 </template>
 
@@ -16,6 +16,7 @@ export default {
 .index {
   height: 100%;
   display: flex;
+  font-size: 66px;
   align-items: center;
   justify-content: center;
 }
