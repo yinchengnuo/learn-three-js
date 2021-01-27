@@ -47,6 +47,18 @@ const routes = [
         name: 'Lesson1Part5',
         meta: { title: '设置材质效果' },
         component: () => import('@/views/lesson1/part5')
+      },
+      {
+        path: 'part6',
+        name: 'Lesson1Part6',
+        meta: { title: '设置材质效果' },
+        component: () => import('@/views/lesson1/part6')
+      },
+      {
+        path: 'part7',
+        name: 'Lesson1Part7',
+        meta: { title: '相机' },
+        component: () => import('@/views/lesson1/part7')
       }
     ]
   },

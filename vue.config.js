@@ -8,7 +8,7 @@ module.exports = {
   lintOnSave: process.env.NODE_ENV === 'development',
   productionSourceMap: false,
   devServer: {
-    port: process.env.port || process.env.npm_config_port || 9527,
+    port: process.env.port || process.env.npm_config_port || 1123,
     open: true,
     overlay: {
       errors: true,

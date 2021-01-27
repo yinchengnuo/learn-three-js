@@ -6,6 +6,7 @@
 
 <script>
 import '@/assets/js/controls/OrbitControls.js'
+
 export default {
   mounted() {
     /**
